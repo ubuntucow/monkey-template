@@ -1,0 +1,27 @@
+GET http://localhost:5000/monkeys
+
+###
+
+POST http://localhost:5000/monkeys
+Content-Type: application/json
+
+{
+    "name": "meowsi",
+    "breed": "ga"
+}
+
+###
+GET http://localhost:5000/monkeys/6478eaccc00e3db6c79a19bd
+
+###
+
+DELETE http://localhost:5000/monkeys/6478eaccc00e3db6c79a19bd
+
+###
+
+PATCH  http://localhost:5000/monkeys/6478e9893627cdeda4b9917c
+Content-Type: application/json
+
+{
+   "name": "nimpy" 
+}
